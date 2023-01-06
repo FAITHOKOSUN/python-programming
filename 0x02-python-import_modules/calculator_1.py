@@ -26,7 +26,8 @@ def sub(a, b):
 
 
 def mul(a, b):
-    """My multiplication function
+    """
+    My multiplication function
 
     Args:
         a: first integer
