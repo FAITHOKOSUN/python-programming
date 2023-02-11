@@ -17,32 +17,32 @@ class Square:
     def area(self):
         return self.__size ** 2
 
+    def __lt__(self, other):
+        first = self.area()
+        second = other.area()
+        return first < second 
+
+    def __le__(self, other):
+        first = self.area()
+        second = other.area()
+        return first <= second
+
     def __eq__(self, other):
-        first = self.area
-        second = other.area
+        first = self.area()
+        second = other.area()
         return first == second
 
     def __ne__(self, other):
-        first = self.area
-        second = other.area
+        first = self.area()
+        second = other.area()
         return first != second
 
     def __gt__(self, other):
-        first = self.area
-        second = other.area
+        first = self.area()
+        second = other.area()
         return first > second
 
     def __ge__(self, other):
-        first = self.area
-        second = other.area
+        first = self.area()
+        second = other.area()
         return first >= second
-
-    #def __lt__(self, other):
-     #   first = self.area
-      #  second = other.area
-       # return first < second
-
-    def __le__(self, other):
-        first = self.area
-        second = other.area
-        return first <= second
