@@ -1,0 +1,89 @@
+Test case for integers
+::
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
+
+::
+    >>> add_integer(-1,-2)
+    -3
+
+::
+    >>> add_integer(2, -3)
+    -1
+
+::
+    >>> add_integer(-2, 3)
+    1
+
+Test case to see if the function also works for float 
+
+::
+    >>> add_integer(2.0, 3.0)
+    5
+
+::
+    >>> add_integer(-2.0, -1.0)
+    -3
+
+::
+    >>> add_integer(2.0, -3.0)
+    -1
+
+::
+    >>> add_integer(-2.0, 3.0)
+    1
+
+We get whole numbers(integers) because there is a type casting before calculation in the function
+
+
+Test case to see if the function works for float and int data types
+
+::
+    >>> add_integer(3.0, 2)
+    5
+
+::
+    >>> add_integer(-3.0, -2)
+    -5
+
+::
+    >>> add_integer(3.2, 2.2)
+    5
+
+::
+    >>> add_integer(-3.2, -2.2)
+    -5
+
+::
+    >>> add_integer(-3.2, 2.2)
+    -1
+
+To Test if default value is seen 
+::
+    >>> add_integer(2)
+    100
+
+::
+    >>> add_integer(-2)
+    96
+
+::
+    >>> add_integer(2.2)
+    100
+
+::
+    >>> add_integer(-2.2)
+    96
+
+Testing to ensure the correct type is inserted as an argument
+
+::
+    >>> add_integer("hello",3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+::
+    >>> add_integer(2, "hello")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
