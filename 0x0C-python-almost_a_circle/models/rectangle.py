@@ -90,5 +90,3 @@ class Rectangle(Base):
             self.x = args[3]
         if length > 4:
             self.y = args[4]
-
-
