@@ -73,6 +73,12 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
+        list_attr = ["id", "width", "height", "x", "y"]
+        if args is not None:
+            for key, value in kwargs.items():
+                if key in list_attr:
+                    self.__setattr__(key, value)
+
         length = len(args)
         if length > 0:
             self.id = args[0]
